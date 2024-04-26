@@ -57,16 +57,16 @@ describe('check devices by API', () => {
     });
   })
 
-  it('check monitors with API', () => {
-    const laptopValue = 'Apple';
-    apiController.create(`/bycat`, { cat: laptopValue })
+  it('check creating of new category', () => {
+    const pcValue = 'PC';
+    apiController.create(`/bycat`, { cat: pcValue })
       .then(
       (response) => {
       apiController.checkStatusCode(response)
       let arrResponse = response.allRequestResponses
       arrResponse.forEach(element => {
         let responseValue = Object.values(element)[0]
-        expect(responseValue).to.deep.includes('Apple')
+        expect(responseValue).to.deep.includes('PC')
       });
       })
 });
