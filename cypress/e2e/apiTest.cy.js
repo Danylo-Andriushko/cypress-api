@@ -10,7 +10,7 @@ describe('check devices by API', () => {
     apiController.options(`/bycat`).then(response => {
       apiController.checkStatusCode(response)
       const allowedMethods = response.headers.allow
-      apiController.allowMethods(allowedMethods, apiData.data.bycatAllowMethods)
+      apiController.allowMethod(allowedMethods, apiData.data.bycatAllowMethods)
     });
   })
 
@@ -18,7 +18,7 @@ describe('check devices by API', () => {
     apiController.options(`/entries`).then(response => {
       apiController.checkStatusCode(response)
       const allowedMethods = response.headers.allow
-      apiController.allowMethods(allowedMethods, apiData.data.entriesAllowMethods)
+      apiController.allowMethod(allowedMethods, apiData.data.entriesAllowMethods)
     });
   })
 
@@ -26,7 +26,7 @@ describe('check devices by API', () => {
     apiController.options(`/view`).then(response => {
       apiController.checkStatusCode(response)
       const allowedMethods = response.headers.allow
-      apiController.allowMethods(allowedMethods, apiData.data.viewtAllowMethods)
+      apiController.allowMethod(allowedMethods, apiData.data.viewtAllowMethods)
     });
   })
 

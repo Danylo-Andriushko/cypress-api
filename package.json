@@ -1,6 +1,11 @@
 {
   "devDependencies": {
     "cypress": "^13.8.0",
+    "cypress-xpath": "^2.0.1",
     "dotenv": "^16.4.5"
+  },
+  "scripts":{
+    "test": "npx cypress run --spec '../cypress-api/cypress/e2e/apiTest.cy.js'"
   }
+
 }

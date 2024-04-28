@@ -21,7 +21,7 @@ export class ApiController {
         expect(response.status).to.eq(200);
     }
 
-    allowMethods(currentMethod, expectedMethod){
+    allowMethod(currentMethod, expectedMethod){
         expect(currentMethod).to.equal(expectedMethod)
     }
 }
