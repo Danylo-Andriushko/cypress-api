@@ -1,0 +1,14 @@
+stages:          # List of stages for jobs, and their order of execution
+  - test
+ on:
+  push:
+    branches:
+      - main
+ui-test-job:   # This job runs in the test stage.
+  image: cypress/base:latest
+  stage: test
+  script:
+    # install dependencies
+    - npm ci
+    # run Cypress tests
+    - npx cypress run --spec "../cypress-api/cypress/e2e/apiTest.cy.js"
