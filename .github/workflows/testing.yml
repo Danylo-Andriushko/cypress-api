@@ -1,6 +1,7 @@
 name: CI for test running
 
-on: push
+on: 
+push:
 branches: 
 - main
 
