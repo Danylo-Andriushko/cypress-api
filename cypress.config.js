@@ -11,4 +11,10 @@ module.exports = defineConfig({
       ...process.env,
   },
   },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "overwrite": true,
+    "json": true
+  }
 });
