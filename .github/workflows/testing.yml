@@ -24,8 +24,8 @@ jobs:
     - name: Run api tests
       run: npm run test
 
-    - name: Upload Mochawesome Report
-      uses: actions/upload-artifact@v2
-      with:
-        name: mochawesome-report
-        path: reports/*.html
+    # - name: Upload Mochawesome Report
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: mochawesome-report
+    #     path: reports/*.html
