@@ -15,6 +15,6 @@ module.exports = defineConfig({
   "reporterOptions": {
     "reportDir": "cypress/reports",
     "overwrite": true,
-    "json": true
+    "json": false
   }
 });
