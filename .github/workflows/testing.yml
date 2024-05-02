@@ -1,7 +1,7 @@
 name: CI for test running
 
 on: push
-branches: [ main ]
+branches: main
 
 jobs:
   test:
